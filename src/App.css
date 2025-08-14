@@ -24,6 +24,11 @@
   color: white;
 }
 
+.bg{
+  background-color: cadetblue;
+  text-align: center;
+  margin-top: 50px;
+}
 .App-link {
   color: #61dafb;
 }
