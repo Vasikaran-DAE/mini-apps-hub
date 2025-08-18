@@ -1,13 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import CounterApp from './counterApp';
+import TodoList from './toDoApp'
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+  <div style={{ margin: "20px auto", width: "300px", textAlign: "center" }}>
+    Hello
+    </div>
+    <CounterApp />
+    <TodoList />
   </React.StrictMode>
 );
 
