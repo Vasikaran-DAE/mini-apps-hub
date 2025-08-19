@@ -4,13 +4,15 @@ import './index.css';
 import CounterApp from './counterApp';
 import TodoList from './toDoApp'
 import reportWebVitals from './reportWebVitals';
+import HeaderApp from './Header';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-  <div style={{ margin: "20px auto", width: "300px", textAlign: "center" }}>
+  {/* <div style={{ margin: "20px auto", width: "300px", textAlign: "center",fontSize: "20px ",backgroundColor :'green' }}>
     Hello
-    </div>
+    </div> */}
+    <HeaderApp/>
     <CounterApp />
     <TodoList />
   </React.StrictMode>

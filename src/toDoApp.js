@@ -19,11 +19,12 @@ function TodoList() {
   };
 
   return (
-    <div style={{ margin: "20px auto", width: "300px", textAlign: "center" }}>
-      <h2>📝 To-Do List</h2>
+    <div  style={{ backgroundColor :"halfwhite", textAlign: "center" }}>
+   <h2 style={{ margin: 0 }}>📝 To-Do List</h2>
+
 
       <input
-        type="text"
+        type="text" 
         value={task}
         placeholder="Enter a task..."
         onChange={(e) => setTask(e.target.value)}
@@ -41,11 +42,12 @@ function TodoList() {
               padding: "10px",
               border: "1px solid #ccc",
               display: "flex",
+              height: "20px",
               justifyContent: "space-between",
             }}
           >
             <span>{t}</span>
-            <button onClick={() => deleteTask(index)}>❌</button>
+            <button onClick={() => deleteTask(index)} style ={{color:"red"}}>❌</button>
           </li>
         ))}
       </ul>
