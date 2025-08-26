@@ -19,8 +19,14 @@
 .bg{
   background-color: cadetblue;
   text-align: center;
- 
 }
+
+.author{
+  background-color: rgb(48, 16, 78);
+  color: white;
+  text-align: center;
+ } 
+
 .App-link {
   color: #61dafb;
 }
