@@ -6,22 +6,39 @@ import TodoList from './toDoApp'
 import reportWebVitals from './reportWebVitals';
 import HeaderApp from './Header';
 import Developer from './developer';
+import Navigation from './navigation';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <div style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}>
-      <HeaderApp />
-      <CounterApp />
-      <TodoList />
+    <div
+      style={{display: "flex", minHeight: "100vh" }} >
+     
+      <div style={{ width: "300px", borderRight: "1px solid #ccc",backgroundColor:'silver', textAlign:"center", border: "3px solid black"}}>
+        <Navigation />
+      </div>
 
-      {/* Push Developer to bottom */}
-      <div style={{ marginTop: "auto"}}>
-        <Developer />
+      {/* Right Side - Other Components in a column */}
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          flex: 1,              // Take remaining space
+        }}
+      >
+        <HeaderApp />
+        <CounterApp />
+        <TodoList />
+
+        {/* Push Developer to bottom */}
+        <div style={{ marginTop: "auto" }}>
+          <Developer />
+        </div>
       </div>
     </div>
   </React.StrictMode>
 );
+
 
 
 // If you want to start measuring performance in your app, pass a function

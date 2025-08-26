@@ -24,7 +24,7 @@ function TodoList() {
   const updateTask = (index, newTask) => {}
 
   return (
-    <div  style={{ backgroundColor :"halfwhite", textAlign: "center" }}>
+    <div  style={{ backgroundColor :"darkgrey", textAlign: "center" }}>
    <h2 style={{ margin: 0 }}>📝 To-Do List</h2>
 
 
